@@ -63,3 +63,86 @@ function decode(string) {
 }
 
 decode('h2ll4')
+
+// ----- Best Practices ----- //
+
+// function encode(string) {
+//   let output = "";
+//   for(let i = 0; i < string.length; i++) {
+//     switch(string[i]) {
+//       case 'a': output+= "1"
+//         break;
+//       case 'e': output+= "2"
+//         break;
+//       case 'i': output+= "3"
+//         break;
+//       case 'o': output+= "4"
+//         break;
+//       case 'u': output+= "5"
+//         break;
+//       default: output += string[i];
+//     }
+//   }
+//   return output;
+// }
+
+// function decode(string) {
+//   let output = "";
+//   for(let i = 0; i < string.length; i++) {
+//     switch(string[i]) {
+//       case '1': output+= "a"
+//         break;
+//       case '2': output+= "e"
+//         break;
+//       case '3': output+= "i"
+//         break;
+//       case '4': output+= "o"
+//         break;
+//       case '5': output+= "u"
+//         break;
+//       default: output += string[i];
+//     }
+//   }
+//   return output;
+// }
+
+
+// function encode(string) {
+//   let newStr = string.split('')
+//   const alpha = {
+//     'a': 1,
+//     'e': 2,
+//     'i': 3,
+//     'o': 4,
+//     'u': 5
+//   };
+//   for(let i = 0; i < newStr.length; i++){
+//     for(const key in alpha){
+//       if(newStr[i] === key){
+//       newStr[i] = alpha[key]
+//     }
+//     }
+//   }
+// return newStr.join('');
+// }
+
+// function decode(string) {
+//   let newStr = string.split('')
+//  const alpha = {
+//     'a': 1,
+//     'e': 2,
+//     'i': 3,
+//     'o': 4,
+//     'u': 5
+//   };
+//     for(let i = 0; i < newStr.length; i++){
+//     for(const key in alpha){
+//       if(parseInt(newStr[i]) === alpha[key] ){
+//       newStr[i] = key
+//     }
+//     }
+//   }
+// return newStr.join('');
+// }
+
+// ----- Best Practices ----- //
